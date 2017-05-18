@@ -1,0 +1,12 @@
+# JBoss Middleware OpenJDK layer
+
+NOTE: Extends link:https://github.com/jboss-container-images/jboss-base-image[JBoss base image]
+
+This layer provides base for all Middleware products that require JDK to run, specifically:
+
+. Installs OpenJDK in selected version
+. Sets a few environment variables.
+
+# License
+
+See link:LICENSE[LICENSE] file.

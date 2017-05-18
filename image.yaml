@@ -1,0 +1,18 @@
+name: "jboss/openjdk18-rhel7"
+description: "Base image with OpenJDK 8 on RHEL 7"
+version: "1.0"
+release: "dev"
+from: "jboss/base-rhel7:1.0"
+user: 185
+envs:
+    information:
+        - name: "JAVA_HOME"
+          value: "/usr/lib/jvm/java-1.8.0"
+        - name: "JAVA_VENDOR"
+          value: "openjdk"
+        - name: "JAVA_VERSION"
+          value: "1.8.0"
+packages:
+    - java-1.8.0-openjdk-devel
+dogen:
+    version: 2.0.0rc15
