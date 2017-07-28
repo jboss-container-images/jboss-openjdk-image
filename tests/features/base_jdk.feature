@@ -1,3 +1,4 @@
+@jboss/openjdk18-rhel7
 Feature: Standalone base-jdk image tests
 
   @ci
