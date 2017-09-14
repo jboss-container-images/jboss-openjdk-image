@@ -10,8 +10,12 @@ envs:
       value: "openjdk"
     - name: "JAVA_VERSION"
       value: "1.8.0"
+    - name: "USE_32_BIT_JVM"
+      description: Provides ability to toggle between 64 bit (default) and 32 bit JVM
+      example: "true"
 packages:
-    - java-1.8.0-openjdk-devel
+    - java-1.8.0-openjdk-devel.x86_64
+    - java-1.8.0-openjdk-devel.i686
 dogen:
     version: 2.4.3
     plugins:
