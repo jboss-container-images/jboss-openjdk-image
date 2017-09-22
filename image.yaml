@@ -11,7 +11,9 @@ envs:
     - name: "JAVA_VERSION"
       value: "1.8.0"
 packages:
-    - java-1.8.0-openjdk-devel
+    - java-1.8.0-openjdk-1.8.0.141
+    - java-1.8.0-openjdk-headless-1.8.0.141
+    - java-1.8.0-openjdk-devel-1.8.0.141
 dogen:
     version: 2.4.2
     plugins:
