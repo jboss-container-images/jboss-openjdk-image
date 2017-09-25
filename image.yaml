@@ -19,4 +19,4 @@ dogen:
     plugins:
         dist_git:
             repo: jboss-openjdk-docker
-            branch: jb-openjdk18-rhel7-1.0
+            branch: jb-openjdk18-rhel7-1.1
