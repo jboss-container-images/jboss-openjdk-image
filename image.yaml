@@ -1,8 +1,9 @@
+schema_version: 1
+
 name: "jboss/openjdk18-rhel7"
 description: "Base image with OpenJDK 8 on RHEL 7"
 version: "1.1"
 from: "jboss/base-rhel7:1.0"
-user: 185
 envs:
     - name: "JAVA_HOME"
       value: "/usr/lib/jvm/java-1.8.0"
@@ -11,12 +12,15 @@ envs:
     - name: "JAVA_VERSION"
       value: "1.8.0"
 packages:
-    - java-1.8.0-openjdk-1.8.0.141
-    - java-1.8.0-openjdk-headless-1.8.0.141
-    - java-1.8.0-openjdk-devel-1.8.0.141
-dogen:
-    version: 2.4.3
-    plugins:
-        dist_git:
-            repo: jboss-openjdk-docker
+      repositories:
+          - jboss
+      install:
+          - java-1.8.0-openjdk-1.8.0.141
+          - java-1.8.0-openjdk-headless-1.8.0.141
+          - java-1.8.0-openjdk-devel-1.8.0.141
+run:
+      user: 185
+osbs:
+      repository:
+            name: jboss-openjdk-docker
             branch: jb-openjdk18-rhel7-1.1
