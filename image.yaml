@@ -3,7 +3,7 @@ schema_version: 1
 name: "jboss/openjdk18-rhel7"
 description: "Base image with OpenJDK 8 on RHEL 7"
 version: "1.1"
-from: "jboss/base-rhel7:1.0"
+from: "jboss/base-rhel7:1.1"
 labels:
     - name: "org.jboss.product"
       value: "openjdk"
