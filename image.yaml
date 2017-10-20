@@ -15,9 +15,7 @@ packages:
       repositories:
           - jboss-os
       install:
-          - java-1.8.0-openjdk-1.8.0.141
-          - java-1.8.0-openjdk-headless-1.8.0.141
-          - java-1.8.0-openjdk-devel-1.8.0.141
+          - java-1.8.0-openjdk-devel
 run:
       user: 185
 osbs:
