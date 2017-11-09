@@ -2,8 +2,8 @@ schema_version: 1
 
 name: "jboss/openjdk18-rhel7"
 description: "Base image with OpenJDK 8 on RHEL 7"
-version: "1.1"
-from: "jboss/base-rhel7:1.1"
+version: "1.2"
+from: "jboss/base-rhel7:1.2"
 labels:
     - name: "org.jboss.product"
       value: "openjdk"
@@ -28,4 +28,4 @@ run:
 osbs:
       repository:
             name: jboss-openjdk-docker
-            branch: jb-openjdk18-rhel7-1.1
+            branch: jb-openjdk18-rhel7-1.2
