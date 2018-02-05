@@ -18,9 +18,13 @@ envs:
       value: "openjdk"
     - name: "JAVA_VERSION"
       value: "1.8.0"
-packages:
+modules:
       repositories:
-          - jboss-os
+           - name: release
+             path: modules/release/product
+      install:
+          - name: os
+packages:
       install:
           - java-1.8.0-openjdk-devel
 run:
