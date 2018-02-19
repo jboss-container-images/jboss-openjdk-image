@@ -5,6 +5,8 @@ description: "Base image with OpenJDK 8 on RHEL 7"
 version: "1.1"
 from: "jboss/base-rhel7:1.1"
 labels:
+    - name: "com.redhat.component"
+      value: "jboss-openjdk18-rhel7-container"
     - name: "org.jboss.product"
       value: "openjdk"
     - name: "org.jboss.product.version"
@@ -27,5 +29,5 @@ run:
       user: 185
 osbs:
       repository:
-            name: jboss-openjdk-docker
+            name: container/jboss-openjdk
             branch: jb-openjdk18-rhel7-1.1
