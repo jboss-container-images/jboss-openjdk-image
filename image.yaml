@@ -29,5 +29,5 @@ run:
       user: 185
 osbs:
       repository:
-            name: container/jboss-openjdk
+            name: containers/jboss-openjdk
             branch: jb-openjdk-1.8-rhel-7
