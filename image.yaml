@@ -30,4 +30,4 @@ run:
 osbs:
       repository:
             name: container/jboss-openjdk
-            branch: jb-openjdk18-rhel7-1.1
+            branch: jb-openjdk-1.8-rhel-7
