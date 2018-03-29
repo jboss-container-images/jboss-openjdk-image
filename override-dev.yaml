@@ -1,0 +1,9 @@
+# Use development version of the base image
+from: "jboss/base-rhel7:dev"
+
+# Use correct development branch
+osbs:
+  repository:
+    name: containers/jboss-openjdk
+    branch: jb-openjdk-1.8-dev-rhel-7
+
