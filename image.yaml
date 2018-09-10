@@ -22,7 +22,8 @@ envs:
       value: "1.8.0"
 packages:
       repositories:
-          - jboss-os
+          - name: base
+            id: rhel-7-server-rpms
       install:
           - java-1.8.0-openjdk-devel
 run:
